@@ -2,22 +2,60 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <section className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-            <h1 className="text-5xl font-bold mb-4">Manoj Kr. Bisht</h1>
-            <h2 className="text-2xl mb-6">Senior Manager - AI Governance</h2>
-            <p className="mb-8 max-w-xl">
-                Strategic leader in AI governance with over 10 years of experience in financial services, combining technical expertise with regulatory awareness.
-            </p>
-            <div className="flex space-x-4">
-                <a href="#projects" className="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-gray-200 transition">
-                    View Projects
-                </a>
-                <a href="/path/to/resume.pdf" className="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-gray-200 transition">
-                    Download Resume
-                </a>
-                <a href="/ai" className="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-gray-200 transition">
-                    Talk to My AI Agent
-                </a>
+        <section className="hero" id="top">
+            <div className="hero-noise" aria-hidden="true" />
+            <header className="hero-topbar">
+                <p className="hero-eyebrow">Manoj Kr. Bisht</p>
+                <p className="hero-location">Glasgow, UK</p>
+            </header>
+
+            <div className="hero-grid">
+                <div className="hero-main">
+                    <p className="hero-kicker">AI Governance Leader</p>
+                    <h1 className="hero-title">
+                        Designing trust for
+                        <span>AI in banking.</span>
+                    </h1>
+                    <p className="hero-summary">
+                        Senior Manager focused on responsible AI, model risk, and regulatory readiness across financial services.
+                        I combine deep IFRS 9 and IRB experience with practical AI governance for real-world deployment.
+                    </p>
+
+                    <div className="hero-cta-row">
+                        <a href="#projects" className="hero-cta hero-cta-primary">View Projects</a>
+                        <a href="mailto:mmpbisht17@gmail.com" className="hero-cta hero-cta-secondary">Contact Me</a>
+                    </div>
+
+                    <ul className="hero-tags" aria-label="Specializations">
+                        <li>Responsible AI</li>
+                        <li>Model Risk</li>
+                        <li>PRA Remediation</li>
+                        <li>RAG Risk Controls</li>
+                    </ul>
+                </div>
+
+                <aside className="hero-panel" aria-label="Profile highlights">
+                    <p className="hero-panel-label">Current Role</p>
+                    <h2>Manager, EY</h2>
+                    <p>
+                        Leading oversight across IFRS 9 audits, IRB remediation, and governance work aligned with PRA expectations.
+                    </p>
+
+                    <div className="hero-panel-metrics">
+                        <div>
+                            <span>10+</span>
+                            <p>Years Experience</p>
+                        </div>
+                        <div>
+                            <span>3</span>
+                            <p>Core Domains</p>
+                        </div>
+                        <div>
+                            <span>UK</span>
+                            <p>Banking Focus</p>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </section>
     );
