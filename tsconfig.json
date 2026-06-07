@@ -9,14 +9,10 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"]
-    }
+    "jsx": "react-jsx"
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/*.spec.ts"]

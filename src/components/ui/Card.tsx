@@ -6,13 +6,17 @@ interface CardProps {
     techStack: string[];
     githubLink: string;
     liveDemoLink: string;
-    coverImage: string;
+    coverImage?: string;
 }
 
 const Card: React.FC<CardProps> = ({ title, description, techStack, githubLink, liveDemoLink, coverImage }) => {
     return (
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src={coverImage} alt={title} className="w-full h-48 object-cover" />
+            {coverImage ? (
+                <img src={coverImage} alt={title} className="w-full h-48 object-cover" />
+            ) : (
+                <div className="w-full h-48 bg-gray-200" aria-hidden="true" />
+            )}
             <div className="p-4">
                 <h2 className="text-xl font-semibold">{title}</h2>
                 <p className="text-gray-700">{description}</p>

@@ -1,4 +1,14 @@
-export const projects = [
+export interface Project {
+  title: string;
+  description: string;
+  techStack: string[];
+  githubLink: string;
+  liveDemoLink: string;
+  tags: string[];
+  coverImage?: string;
+}
+
+export const projects: Project[] = [
   {
     title: "AI Governance Framework",
     description: "Developed a comprehensive AI governance framework for a leading financial institution, ensuring compliance with regulatory standards.",
