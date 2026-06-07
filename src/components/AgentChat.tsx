@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react';
 import { PortfolioAgent } from '../ai/agents/portfolioAgent';
 
@@ -56,3 +57,4 @@ const AgentChat: React.FC = () => {
 };
 
 export default AgentChat;
+*/

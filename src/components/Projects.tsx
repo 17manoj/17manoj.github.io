@@ -1,5 +1,5 @@
 import React from 'react';
-import projectsData from '../data/projects';
+import { projects as projectsData } from '../data/projects';
 import Card from './ui/Card';
 
 const Projects: React.FC = () => {
@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
         <section className="py-10">
             <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projectsData.map((project) => (
+                {projectsData.map((project: any) => (
                     <Card
                         key={project.title}
                         title={project.title}
